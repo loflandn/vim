@@ -1,7 +1,7 @@
 My vim Configuration
 ===
 
-My full vim configuration, including my vimrc file, my plugins, etc.
+My full vim configuration, including my vimrc file, my plugins, etc. Essentially, it's everything you need to drop into place on a new system and have your meticulously set up vim environment.
 
 ## Usage
 
