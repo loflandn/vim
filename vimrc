@@ -85,12 +85,12 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 nnoremap <leader>j VipJ
 nnoremap <leader>q gqip
-"nnoremap <leader>f 1z=
+nnoremap <leader>f 1z=
 nnoremap <leader>s ]s
 nnoremap <leader>u :!git pull website master && git commit -am 'Generic Push' && git push website master<CR><CR>
 nnoremap <leader>p :!git commit -am 'Auto Save' && git push origin master<CR><CR>
 nnoremap <leader>d :read !date<CR>
 nnoremap <leader>r :!!<CR>
 nnoremap <leader>m :normal @a
-nnoremap <leader>f :CtrlP<CR>
+nnoremap <leader>l :CtrlP<CR>
 nnoremap <leader>n :NERDTree<CR>
