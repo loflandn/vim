@@ -8,6 +8,8 @@ filetype plugin indent on
 
 " Basics
 
+set shell=/bin/zsh
+
 set guifont=Menlo:h14
 set nocompatible
 set modelines=0
@@ -29,7 +31,7 @@ set ruler
 set backspace=indent,eol,start
 set laststatus=2
 set number
-" set undofile
+set noundofile
 nnoremap / /\v
 vnoremap / /\v
 set ignorecase
@@ -44,7 +46,6 @@ vnoremap <tab> %
 set wrap
 set textwidth=0
 set formatoptions=qrn1
-"set list
 nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
@@ -61,13 +62,11 @@ vnoremap <F1> <ESC>
 nnoremap ; :
 au FocusLost * :wa
 vnoremap . :norm.<CR>
+
 set spell
-set shell=/bin/zsh
 
 colorscheme solarized
 set background=dark
-"au InsertEnter * hi Normal ctermbg=234 guibg=#191970
-"au InsertLeave * hi Normal ctermbg=232 guibg=#2B3856
 
 " Shortcuts
 
