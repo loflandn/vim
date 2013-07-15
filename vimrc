@@ -9,7 +9,6 @@ filetype plugin indent on
 " Basics
 
 set shell=/bin/zsh
-
 set guifont=Menlo:h14
 set nocompatible
 set modelines=0
