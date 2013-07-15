@@ -87,8 +87,8 @@ nnoremap <leader>j VipJ
 nnoremap <leader>q gqip
 nnoremap <leader>f 1z=
 nnoremap <leader>s ]s
-nnoremap <leader>u :!git pull website master && git commit -am 'Generic Push' && git push website master<CR><CR>
-nnoremap <leader>p :!git commit -am 'Auto Save' && git push origin master<CR><CR>
+nnoremap <leader>u :!git pull website master && git commit -am 'Standard commit.' && git push website master<CR><CR>
+nnoremap <leader>p :!git commit -am 'Standard commit.' && git push origin master<CR><CR>
 nnoremap <leader>d :read !date<CR>
 nnoremap <leader>r :!!<CR>
 nnoremap <leader>m :normal @a
