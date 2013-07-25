@@ -1,13 +1,13 @@
-" Basic Configuration
+" Configuration
 
 " Pathogen first
 
 execute pathogen#infect()
-syntax on
+
+" Basic Settings
+
 filetype plugin indent on
-
-" Basics
-
+syntax on
 set shell=/bin/zsh
 set guifont=Menlo:h14
 set nocompatible
@@ -45,6 +45,22 @@ vnoremap <tab> %
 set wrap
 set textwidth=0
 set formatoptions=qrn1
+set spell
+
+" Aesthetics
+
+colorscheme solarized
+set background=light
+
+" Mappings and shortcuts
+
+" Basics
+
+inoremap jk <ESC>
+let mapleader = ","
+
+" Arrows are unvimlike 
+
 nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
@@ -53,8 +69,9 @@ inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
-inoremap jk <ESC>
-let mapleader = ","
+
+" Miscellaneous 
+
 inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
@@ -62,12 +79,7 @@ nnoremap ; :
 au FocusLost * :wa
 vnoremap . :norm.<CR>
 
-set spell
-
-colorscheme solarized
-set background=dark
-
-" Shortcuts
+" Leader shortcuts
 
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 nnoremap <leader>a :Ack
@@ -77,10 +89,6 @@ nnoremap <leader>q gqip
 nnoremap <leader>v V`]
 nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
 nnoremap <leader>w <C-w>v<C-w>l
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
 nnoremap <leader>j VipJ
 nnoremap <leader>q gqip
 nnoremap <leader>f 1z=
@@ -92,3 +100,10 @@ nnoremap <leader>r :!!<CR>
 nnoremap <leader>m :normal @a
 nnoremap <leader>l :CtrlP<CR>
 nnoremap <leader>n :NERDTree<CR>
+
+" Control shortcuts
+
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
