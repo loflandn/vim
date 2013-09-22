@@ -99,7 +99,8 @@ nnoremap <leader>d :read !date<CR>
 nnoremap <leader>r :!!<CR>
 nnoremap <leader>m :normal @a
 nnoremap <leader>l :CtrlP<CR>
-nnoremap <leader>n :NERDTree<CR>
+nnoremap <leader>nt :NERDTree<CR>
+nnoremap <leader>n :set invnumber<CR>
 
 " Control shortcuts
 
@@ -107,3 +108,6 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+" Functions
+
